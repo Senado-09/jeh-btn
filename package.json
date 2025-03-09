@@ -1,19 +1,27 @@
 {
   "name": "jeh-btn",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "A customizable React button component with TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.12",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "lucide-react": "^0.479.0",
     "tailwindcss": "^4.0.12"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -24,8 +32,26 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
-    "typescript": "~5.7.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Senado-09/jeh-btn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Senado-09/jeh-btn/issues"
+  },
+  "keywords": [
+    "react",
+    "button",
+    "ui",
+    "component",
+    "typescript",
+    "tailwind"
+  ],
+  "author": "Sena DOMONHEDO",
+  "license": "MIT"
 }
