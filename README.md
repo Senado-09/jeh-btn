@@ -1,5 +1,4 @@
-/**
-  # 📌 Advanced React Button Component
+# 📌 Advanced React Button Component
   
   A customizable button component with multiple variants, sizes, and loading states.
   
@@ -38,4 +37,3 @@
   
   ## 🔗 License
   MIT
- */
