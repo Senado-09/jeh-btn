@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --tsconfig tsconfig.tsup.json",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
